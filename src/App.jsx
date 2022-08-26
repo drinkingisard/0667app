@@ -2,7 +2,11 @@ import "./App.css";
 import { NavLink, Routes, Route } from "react-router-dom";
 
 const Profile = () => {
-  return <h2>Это страница с профилем</h2>;
+  return (
+    <div className="row">
+      <h2>Это страница с профилем</h2>
+    </div>
+  );
 };
 const Messages = () => {
   return <h2>Это страница с сообщениями</h2>;
