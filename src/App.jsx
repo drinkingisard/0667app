@@ -12,7 +12,7 @@ const Settings = () => {
 
 
 function App(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="container mt-5">
       <div className="row">
@@ -38,13 +38,13 @@ function App(props) {
         <div className="col-9">
           <Routes>
             <Route
-              path="/profile"
+              path="/profile/*"
               element={<Profile function={props.function.key_getUser} />}
             />
             <Route path="/messages" element={<Messages />} />
             <Route path="/settings" element={<Settings />} />
             <Route
-              path="/friends"
+              path="/friends/*"
               element={<Friends function={props.function.key_getUsers} />}
             />
           </Routes>
